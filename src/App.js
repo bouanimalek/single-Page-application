@@ -11,7 +11,7 @@ function App() {
 
       <Menu />
 
-      <Route exact={true} path="/" component={Docs}/>
+      <Route exact path="/" component={Docs}/>
       <Route path="/tutorials" component={Tutorials}/>
       <Route path="/community" component={Community}/>
       

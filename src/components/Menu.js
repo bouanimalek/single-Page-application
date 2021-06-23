@@ -12,10 +12,10 @@ function Menu() {
     <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="/">Docs</Link>
+            <NavLink className="nav-link" to="/">Docs</NavLink>
             </li>
             <li className="nav-item">
-            <Link className="nav-link" to="/tutorials">Tutorials</Link>
+            <NavLink className="nav-link" to="/tutorials">Tutorials</NavLink>
             </li>
             <li className="nav-item">
             <NavLink className="nav-link" to="/community">Community</NavLink>

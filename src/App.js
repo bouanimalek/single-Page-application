@@ -30,11 +30,11 @@ class App extends Component {
   
         <Switch>
         <Route exact path="/" component={Docs}/>
-        {/*<Route path="/tutorials" component={Tutorials}/>*/}
+        <Route path="/tutorials" component={Tutorials}/>
   
-        <Route path="/tutorials" render={() => (
+        {/*<Route path="/tutorials" render={() => (
            this.state.underConst.Tutorials ? (<Redirect to="/"/>) : (<Tutorials />)
-        )}/>
+        )}/>*/}
   
         <Route  path="/community" component={Community}/>
         <Route component={ErrorPage}/>

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link, NavLink} from 'react-router-dom';
 
-function Menu() {
+function Menu(props) {
+    console.log(props);
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">

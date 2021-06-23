@@ -18,7 +18,7 @@ function Menu() {
             <Link className="nav-link" to="/tutorials">Tutorials</Link>
             </li>
             <li className="nav-item">
-            <Link className="nav-link" to="/community">Community</Link>
+            <NavLink className="nav-link" to="/community">Community</NavLink>
             </li>
             
         </ul>

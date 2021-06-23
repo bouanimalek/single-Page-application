@@ -1,9 +1,10 @@
 import './App.css';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Docs from './components/Docs';
 import Tutorials from './components/Tutorials';
 import Community from './components/Community';
 import Menu from './components/Menu';
+import ErrorPage from './components/ErrorPage';
 
 function App() {
   return (
@@ -11,9 +12,15 @@ function App() {
 
       <Menu />
 
+      <Switch>
       <Route exact path="/" component={Docs}/>
       <Route path="/tutorials" component={Tutorials}/>
-      <Route path="/community" component={Community}/>
+      <Route  path="/community" component={Community}/>
+      <Route component={ErrorPage}/>
+
+      </Switch>
+
+      
       
       
     </BrowserRouter>
